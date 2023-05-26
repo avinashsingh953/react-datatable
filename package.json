@@ -1,46 +1,38 @@
 {
   "name": "react-datatable",
-  "version": "1.0.0",
-  "description": "react datatable module",
-  "main": "./src/index.js",
-  "scripts": {
-    "test": "npm start",
-    "start": "webpack-dev-server --hot",
-    "build": "webpack --mode production"
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "@fortawesome/fontawesome-free": "^5.15.3"
   },
-  "keywords": [
-    "react",
-    "datatable",
-    "npm",
-    "datatable"
-  ],
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   },
-  "author": "Avinash Kumar Singh",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
