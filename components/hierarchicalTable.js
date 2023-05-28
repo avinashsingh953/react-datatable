@@ -43,8 +43,8 @@ function HierarchicalTable(props) {
 
     return (
         <table className={props.styles.tableClass}>
-            {settings.header.enabled && <Header {...props} settings={settings} columns={columns} data={hierarchicalData} />}
-            <Body {...props} settings={settings} columns={columns} data={hierarchicalData} />
+            {settings.header.enabled && <Header {...props} settings={settings} columns={columns} hierarchicalData={hierarchicalData} />}
+            <Body {...props} settings={settings} columns={columns} hierarchicalData={hierarchicalData} />
         </table>
     )
 }
